@@ -1,0 +1,472 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: cursive;
+  overflow: hidden;
+}
+
+.heading {
+  width: 85.8rem;
+  height: 4rem;
+  background-color: #EC5858;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .8rem;
+  padding-left: 1.3rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  border-bottom: 1rem solid #EC5858;
+}
+
+.heading .icon1 {
+  margin-left: .7rem;
+  margin-right: 2rem;
+  font-size: 3.2rem;
+  padding-left: .8rem;
+}
+
+.background .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 580px;
+  height: 310px;
+  background-color: white;
+  left: 57px;
+  bottom: 130px;
+  border-bottom: 2rem solid #EC5858;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: #EC5858 -4px -5px 9px -5px;
+          box-shadow: #EC5858 -4px -5px 9px -5px;
+  border-right: 32px solid #EC5858;
+  justify-content: center;
+}
+
+.background .informations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 580px;
+  height: 310px;
+  background-color: white;
+  left: 46rem;
+  bottom: 130px;
+  border-bottom: 2rem solid #EC5858;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: #EC5858 -1px 2px 6px 0px;
+          box-shadow: #EC5858 -1px 2px 6px 0px;
+}
+
+.background .informations .choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 580px;
+  background-color: #EC5858;
+  height: 1.3rem;
+  padding: 12px;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.background .informations .choice i {
+  padding: 1rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.background .informations .choice i:hover {
+  background-color: white;
+  color: #EC5858;
+  cursor: crosshair;
+}
+
+input {
+  width: 500px;
+  height: 35px;
+  font-size: 1.2rem;
+  padding: 1px;
+  color: #EC5858;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+input:hover {
+  width: 510px;
+  height: 40px;
+}
+
+input::-webkit-input-placeholder {
+  color: #ff5656;
+}
+
+input:-ms-input-placeholder {
+  color: #ff5656;
+}
+
+input::-ms-input-placeholder {
+  color: #ff5656;
+}
+
+input::placeholder {
+  color: #ff5656;
+}
+
+input:focus {
+  color: #EC5858;
+  border-color: #da3c3c;
+  -webkit-animation-name: animate;
+          animation-name: animate;
+  -webkit-animation-duration: .7s;
+          animation-duration: .7s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-play-state: ease;
+          animation-play-state: ease;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    border-color: #EC5858;
+    border-style: solid;
+    border-width: 5px;
+  }
+  50% {
+    border-color: #ec58588c;
+    border-style: solid;
+    border-width: 7px;
+  }
+  70% {
+    border-color: #ec58584b;
+    border-style: solid;
+    border-width: 10px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    border-color: #EC5858;
+    border-style: solid;
+    border-width: 5px;
+  }
+  50% {
+    border-color: #ec58588c;
+    border-style: solid;
+    border-width: 7px;
+  }
+  70% {
+    border-color: #ec58584b;
+    border-style: solid;
+    border-width: 10px;
+  }
+}
+
+button {
+  background-color: #EC5858;
+  border: 0;
+  color: 0;
+  width: 500px;
+  height: 37px;
+  color: white;
+  padding: 1px;
+  font-size: 1.2rem;
+}
+
+button {
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+button:hover {
+  width: 510px;
+  height: 40px;
+}
+
+.ending {
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  font-size: 1.1rem;
+  color: #6b6b6b;
+  width: 100%;
+  border-top: 0.4rem solid #EC5858;
+  word-spacing: 10px;
+}
+
+.ending a {
+  text-decoration: none;
+  color: #EC5858;
+}
+
+.ending a:hover {
+  text-decoration: underline;
+}
+
+#dummy {
+  position: absolute;
+  bottom: 123px;
+}
+
+.afterloading {
+  display: none;
+}
+
+.beforeloading {
+  display: block;
+}
+
+.calling {
+  width: 46%;
+  height: 328px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 2.5rem;
+  right: 2rem;
+  background-color: #EC5858;
+}
+
+.calling span {
+  margin: 5px;
+  position: absolute;
+}
+
+.calling .connecting {
+  margin: 15px;
+  position: absolute;
+  left: 10rem;
+}
+
+.a1 {
+  -webkit-animation-name: a1;
+          animation-name: a1;
+  -webkit-animation-duration: 1.01s;
+          animation-duration: 1.01s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  left: 22rem;
+  top: 8.4rem;
+  font-weight: 900;
+}
+
+@-webkit-keyframes a1 {
+  0% {
+    top: 8.4rem;
+  }
+  20% {
+    top: 8rem;
+  }
+  40% {
+    top: 9rem;
+  }
+  60% {
+    top: 7rem;
+  }
+  80% {
+    top: 9rem;
+  }
+  100% {
+    top: 8.4rem;
+  }
+}
+
+@keyframes a1 {
+  0% {
+    top: 8.4rem;
+  }
+  20% {
+    top: 8rem;
+  }
+  40% {
+    top: 9rem;
+  }
+  60% {
+    top: 7rem;
+  }
+  80% {
+    top: 9rem;
+  }
+  100% {
+    top: 8.4rem;
+  }
+}
+
+.a2 {
+  -webkit-animation-name: a1;
+          animation-name: a1;
+  -webkit-animation-duration: 1.02s;
+          animation-duration: 1.02s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  left: 23rem;
+  top: 8.4rem;
+  font-weight: 900;
+}
+
+@keyframes a1 {
+  0% {
+    top: 8.4rem;
+  }
+  20% {
+    top: 8rem;
+  }
+  40% {
+    top: 9rem;
+  }
+  60% {
+    top: 7rem;
+  }
+  80% {
+    top: 9rem;
+  }
+  100% {
+    top: 8.4rem;
+  }
+}
+
+.a3 {
+  -webkit-animation-name: a1;
+          animation-name: a1;
+  -webkit-animation-duration: 1.03s;
+          animation-duration: 1.03s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  left: 24rem;
+  top: 8.4rem;
+  font-weight: 900;
+}
+
+@keyframes a1 {
+  0% {
+    top: 8.4rem;
+  }
+  20% {
+    top: 8rem;
+  }
+  40% {
+    top: 9rem;
+  }
+  60% {
+    top: 7rem;
+  }
+  80% {
+    top: 9rem;
+  }
+  100% {
+    top: 8.4rem;
+  }
+}
+
+.a4 {
+  -webkit-animation-name: a1;
+          animation-name: a1;
+  -webkit-animation-duration: 1.04s;
+          animation-duration: 1.04s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  left: 25rem;
+  top: 8.4rem;
+  font-weight: 900;
+}
+
+@keyframes a1 {
+  0% {
+    top: 8.4rem;
+  }
+  20% {
+    top: 8rem;
+  }
+  40% {
+    top: 9rem;
+  }
+  60% {
+    top: 7rem;
+  }
+  80% {
+    top: 9rem;
+  }
+  100% {
+    top: 8.4rem;
+  }
+}
+
+.large_grid {
+  width: 67rem;
+  height: 21rem;
+  background-color: white;
+  position: absolute;
+  left: 7rem;
+  bottom: 6rem;
+  padding: 2rem;
+}
+
+.large_grid .grid2 {
+  display: -ms-grid;
+  display: grid;
+  position: absolute;
+  right: 2rem;
+  place-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 46%;
+  height: 328px;
+  background-color: black;
+}
+
+.large_grid .grid2 video {
+  height: 272px;
+}
+
+.large_grid .grid {
+  display: -ms-grid;
+  display: grid;
+  position: absolute;
+  place-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 46%;
+  height: 328px;
+  background-color: black;
+}
+
+.large_grid .grid video {
+  height: 272px;
+}
+/*# sourceMappingURL=sot.css.map */

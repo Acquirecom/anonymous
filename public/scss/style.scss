@@ -1,0 +1,481 @@
+*{
+    padding: 0;
+    margin: 0;
+  
+    font-family: cursive;
+    overflow: hidden;
+
+    
+}
+@mixin  alpha($color1,$left,$color2) {
+    display: flex;
+    position: absolute;
+    width: 580px;
+    height: 310px;
+    background-color: $color1;
+    left: $left;
+    bottom:130px ;
+    border-bottom: 2rem solid $color2;
+
+    
+}
+
+
+
+$color:#EC5858;
+.heading{
+    width: 85.8rem;
+    height: 4rem;
+    background-color: $color;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: .8rem;
+    padding-left: 1.3rem;
+    font-size: 2.4rem;
+    font-weight: 500;
+    border-bottom: 1rem solid $color;
+    .icon1{
+        margin-left: .7rem;
+        margin-right: 2rem;
+        font-size: 3.2rem;
+        padding-left: .8rem;
+    }
+    
+
+
+}
+.background{
+
+    .options{
+   
+        @include alpha(white,57px,$color);
+        justify-content: center;
+     
+      
+    
+        box-shadow: $color -4px -5px 9px -5px;
+        border-right:32px solid $color;
+    
+        justify-content: center;
+        
+        
+        
+    
+    
+    
+       
+    }
+    .informations{
+        
+        @include alpha(white,46rem,$color);
+        justify-content: center;
+        box-shadow:$color -1px 2px 6px 0px;
+      
+        .choice{
+            display: flex;
+            width: 580px;
+            background-color: $color;
+            height: 1.3rem;
+            padding: 12px;
+
+            color:white;
+            align-items: center;
+            justify-content: flex-end;
+            i{
+               padding: 1rem;
+               transition: .5s;
+              &:hover{
+                background-color: white;
+                color: $color;
+                cursor: crosshair;
+                
+              }
+            }
+            
+        }
+
+        
+
+     
+
+      
+    
+    }
+
+}
+
+
+
+input{
+    width: 500px;
+    height: 35px;
+    font-size: 1.2rem;
+    padding: 1px;
+    color: $color;
+    transition-duration: .3s;
+    &:hover{
+        width: 510px;
+        height: 40px;
+        
+       
+    }
+    &::placeholder{
+        color:#ff5656 ;
+    }
+   &:focus{
+        color: $color;
+        border-color:#da3c3c;
+        animation-name: animate;
+        animation-duration: .7s;
+        animation-iteration-count: 1;
+       animation-play-state: ease;
+        
+    
+        
+    }
+  
+
+
+
+
+}
+
+
+
+@keyframes animate{
+    0%{
+        border-color: $color;
+        border-style: solid;
+        border-width: 5px ;
+    }
+    50%{
+        border-color: #ec58588c;
+        border-style: solid;
+        border-width: 7px ;
+        
+    }
+    70%{
+        border-color: #ec58584b;
+        border-style: solid;
+        border-width: 10px ;
+
+    }
+}
+button{
+    background-color: $color;
+    border: 0;
+    color: 0;
+    width: 500px;
+    height: 37px;
+    color: white;
+    padding: 1px;
+    font-size: 1.2rem;
+    
+}
+
+
+button{
+    transition-duration: .5s;
+    &:hover{
+        width: 510px;
+        height: 40px;
+        
+       
+    }
+}
+.ending2{
+    $width:5rem;
+    transition: 2s;
+        background-color: white;
+        position: absolute;
+        bottom: 0rem;
+        padding: 1rem;
+     padding-right:$width;
+     padding-left: $width;
+     font-size: 1.1rem;
+     color: rgb(107, 107, 107);
+     width: 100%;
+     border-top: .4rem solid $color;
+     word-spacing: 10px;
+     a{
+        text-decoration: none;
+        color: $color;
+       
+        &:hover{
+           
+            text-decoration: underline;
+     
+        }
+         }
+         button{
+             width:4rem;
+             &:hover{
+                 width: 4rem;
+                 height: 37px;
+             }
+            
+         }
+         input{
+             &:hover{
+         
+     
+                 
+         height: 35px;
+     
+     
+             }
+             &:focus{
+                 color: $color;
+                 border-color:#da3c3c;
+                 animation-name: animate;
+                 animation-duration: .7s;
+                 animation-iteration-count: 1;
+                animation-play-state: ease;
+                
+             
+                
+                
+             }
+           
+         }
+         form{
+             color:$color;
+             font-size:1.5rem;
+
+         }
+         
+   
+     }
+.ending{
+$width:5rem;
+transition: 2s;
+    background-color: white;
+    position: absolute;
+    bottom: -32rem;
+    padding: 1rem;
+ padding-right:$width;
+ padding-left: $width;
+ font-size: 1.1rem;
+ color: rgb(107, 107, 107);
+ #txt_box{
+    width: 90%;
+    height:30rem;
+
+    border: 1px solid black;
+    overflow-y: auto;
+
+   
+
+ }
+ 
+
+    width: 100%;
+    border-top: .4rem solid $color;
+    word-spacing: 10px;
+    a{
+   text-decoration: none;
+   color: $color;
+  
+   &:hover{
+      
+       text-decoration: underline;
+
+   }
+    }
+    button{
+        width:4rem;
+        &:hover{
+            width: 4rem;
+            height: 37px;
+        }
+       
+    }
+    input{
+        &:hover{
+    
+
+            
+    height: 35px;
+
+
+        }
+        &:focus{
+            color: $color;
+            border-color:#da3c3c;
+            animation-name: animate;
+            animation-duration: .7s;
+            animation-iteration-count: 1;
+           animation-play-state: ease;
+           
+        
+           
+           
+        }
+      
+    }
+    form{
+        color:$color;
+        font-size:1.5rem;
+    }
+    
+
+}
+#dummy{
+    position: absolute;
+    bottom: 123px;
+}
+.afterloading{
+    display: none;
+
+}
+.beforeloading{
+   display: block;
+}
+
+@mixin connecting($right,$bottom, $bgcolor){
+    width: 46%;
+    height: 328px;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    justify-content: center;
+    position: absolute;
+    bottom: $bottom;
+    right: $right;
+   
+    background-color: $bgcolor;
+}
+.calling{
+  @include connecting(2rem,2.5rem,$color);
+    
+    span{
+        margin: 5px;
+        position: absolute;
+        
+
+
+    }
+    .connecting{
+        margin: 15px;
+        position: absolute;
+        left: 10rem;
+    }
+}
+
+
+@for $i from 1 to 5 {
+    .a#{$i}{
+       
+   animation-name: a1;
+   
+     animation-duration: #{1+$i/100}s;
+     transition: .5s;
+     animation-iteration-count: infinite;
+     left: 2#{$i+1}rem;
+     top: 8.4rem;
+    
+     font-weight: 900;
+
+    }
+    @keyframes a1 {
+        0%{
+            top:  8.4rem;
+        }
+        20%{
+            top: 8rem;
+        }
+        40%{
+            top: 9rem;
+        }
+        60%{
+            top: 7rem;
+        }
+        80%{
+            top: 9rem;
+        }
+      
+        100%{
+            top: 8.4rem;
+        }
+        
+    }
+ 
+   
+    
+}
+.large_grid{
+    width: 67rem;
+    height: 21rem;
+    background-color: white;
+    position: absolute;
+    left: 7rem;
+    bottom: 6rem;
+    padding: 2rem;
+
+    .grid2{
+    
+        display: grid;
+        position: absolute;
+        right: 2rem;
+        place-items: center;
+        
+              box-sizing: border-box;
+       width: 46%;
+       height: 328px;
+       background-color: black;
+       
+          video{
+      
+              height: 272px;
+           
+          }
+       
+          }
+      
+    
+
+
+    .grid{
+
+    
+  display: grid;
+  position: absolute;
+  place-items: center;
+  
+        box-sizing: border-box;
+ width: 46%;
+ height: 328px;
+ background-color: black;
+ 
+    video{
+
+        height: 272px;
+     
+    }
+ 
+    }
+
+
+
+
+
+
+
+
+}
+.box12{
+    margin: 1rem;
+    color: black;
+    .red{
+margin: 3px;
+        color: $color;
+    }
+    .orange{
+        margin: 3px;
+                color: rgb(255, 115, 0);
+            }
+
+}
